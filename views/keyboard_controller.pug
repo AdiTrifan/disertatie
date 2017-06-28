@@ -1,0 +1,25 @@
+extends layout
+block head
+	link(rel='stylesheet', href='/stylesheets/keyboard_controller.css')
+block content
+	.container#keyboard
+		ul
+			li(unselectable='on')#up &uarr;
+				| &#x9;
+			li(unselectable='on')#left &larr;
+				| &#x9;
+		
+			li(unselectable='on')#right &rarr;
+		
+			li(unselectable='on')#stop Stop
+
+			li(unselectable='on')#down &darr;
+				| &#x9;
+
+	
+
+
+
+block footer
+	script(src='./min_javascripts/keyboard_controller.js')
+	

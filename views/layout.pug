@@ -1,0 +1,58 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='mobile-web-app-capable', content='yes')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='manifest', href='manifest.json')
+		block head
+
+	body
+		//- /*===========================
+		//- =            navbar            =
+		//- ===========================*/
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			.container
+					.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand(href='/') Remote Car Control
+					#navbar.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='/') Home
+								
+							li
+							// 	a(href='/graphs') Graphs
+							// li
+							// 	a(href='/settings') Settings
+							li.dropdown
+									a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+											| Controllers
+											span.caret
+									ul.dropdown-menu(role='menu')
+											
+											li 
+												a(href='/keyboard_controller') 
+													span.glyphicon.glyphicon-text-color       
+													|Keyboard Controller
+											
+											li
+												a(href='/gyroscope_controller') 
+													span.glyphicon.glyphicon-phone    
+													|Gyroscope Controller
+											li
+												a(href='/speech_controller') 
+													span.glyphicon.glyphicon-headphones          
+													|Speech Controller
+		block content
+		script(src='./min_javascripts/libs.js')
+		script(src="https://cdn.socket.io/socket.io-1.3.5.js")
+		script(src='./min_javascripts/general.js')
+		block footer

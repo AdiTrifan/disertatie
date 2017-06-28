@@ -1,0 +1,28 @@
+@startuml
+
+left to right direction
+
+package "Phone" {
+    [web browser]
+}
+package "Raspberry" {
+    package "Soft"{
+    [webBackend]
+    [databaseDriver]
+    [database]
+    [gpioDriver]
+    [gpio]
+    }
+    package "Hard"{
+        [gpioPins]
+    }
+}
+
+[web browser] ..> HTTP : use
+HTTP -- [webBackend] 
+[webBackend] ..> [databaseDriver]: use
+[databaseDriver]--[database]
+[webBackend] ..>   [gpioDriver] :use
+[gpioDriver] -- [gpio] 
+[gpio] -- [gpioPins]
+@enduml

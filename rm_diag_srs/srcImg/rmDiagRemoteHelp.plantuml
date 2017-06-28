@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor User
+actor SystemAdmin
+rectangle RemoteDiagnosticsWebInterface {
+  User -- (see error message) : call the SystemAdmin
+  SystemAdmin -- (see error message)
+}
+@enduml

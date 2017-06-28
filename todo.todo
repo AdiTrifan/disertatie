@@ -1,0 +1,22 @@
+Must have:
+  ✔ color levels @high @done (15-06-11 15:01)
+  ✔ fix socket @critical  @done (15-06-11 15:27)
+  ☐ Graphs @hard @high @started(15-06-11 17:15)
+  ☐ Login @hard @low
+  ✔ min js @low @done (15-06-25 15:55)
+  ☐ vibrate
+  
+
+Nice to have:
+  ☐ Cpu usage @low
+  ☐ temperature sensor @low
+  ☐ Ultrasonic sensor http://8bitben.me/?p=21 @high
+
+Features:
+ ☐ Geolocation http://html5demos.com/geo @low
+ ☐ Push Notifications http://updates.html5rocks.com/2015/03/push-notificatons-on-the-open-web @low
+ ✔ Homepage http://updates.html5rocks.com/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android#criteria @high @done (15-06-10 19:39)
+General todo:
+  ✔ documentation @critical @done (15-06-25 12:39)
+  ☐ improve gruntfile @low
+  ☐ update readme @critical

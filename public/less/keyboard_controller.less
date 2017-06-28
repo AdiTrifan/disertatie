@@ -1,0 +1,81 @@
+body {
+    background: radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+#keyboard {
+    padding-top: 50px;
+    margin-top: 60px;
+    ul {
+        list-style: none;
+        position: relative;
+        width: 252px;
+        height: 204px;
+        left: 40%;
+        top: 30%;
+        margin-left: -76px;
+        -webkit-user-select: none;
+        /* Chrome/Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+ */
+        /* Rules below not implemented in browsers yet */
+        -o-user-select: none;
+        user-select: none;
+        li {
+            position: absolute;
+            top: 120px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 40px;
+            background-color: #f1f1f1;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #up {
+         top: -60px;
+         left: 60px;
+         animation-name: clickDown;
+         width: 100px;
+         height: 100px;
+         animation-duration: 1s;
+        }
+        #left {
+              left: -50px;
+              width: 70px;
+              height: 200px;
+              top: 60px;
+        }
+
+        #stop {
+           top: 110px;
+           width: 140px;
+           height: 100px;
+           left: 40px;
+           background-color:#f1f1f1;
+        }
+        #down {
+            left: 60px;
+            top: 280px;
+            width: 100px;
+            height: 100px;
+        }
+        #right {
+                left: 200px;
+                height: 200px;
+                top: 60px;
+                width: 70px;
+        }
+       
+    }
+}

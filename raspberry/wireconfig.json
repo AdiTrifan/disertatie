@@ -1,0 +1,7 @@
+{
+    "blue-wire":"GPI0 17",
+    "green-wire": "GPIO 23",
+    "black-wire": "GPIO 27",
+    "white-wire": "GPIO 22",
+    "gren-yellow-wire" :"Ground"
+}

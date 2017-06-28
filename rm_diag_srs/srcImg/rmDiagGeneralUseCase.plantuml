@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor User
+rectangle RemoteDiagnosticsWebInterface {
+  User -- (check the windshield fluid)
+  User -- (check the oil level)
+  User -- (remote control the car)
+}
+@enduml

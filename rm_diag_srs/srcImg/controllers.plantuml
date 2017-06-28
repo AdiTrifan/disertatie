@@ -1,0 +1,30 @@
+@startuml
+
+class Controller {
+    #socketConnection
+    #move
+    +init()
+    +cacheDom()
+    +sendThroughSocket(move)
+    +render()
+}
+
+class KeyboardController{
++bindEvents()
++startPeristentVibrate()
++stopVibrate()
++touchStart()
++touchEnd()
+}
+
+class GyroscopeController{
++handleMotionEvent()
++watchOn()
+}
+class SpeechController{
++handleSpeech()
+}
+Controller <|-- KeyboardController
+Controller <|-- GyroscopeController
+Controller <|-- SpeechController
+@enduml

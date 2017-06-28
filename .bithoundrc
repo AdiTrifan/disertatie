@@ -1,0 +1,39 @@
+{
+  "ignore": [
+    "**/deps/**",
+    "**/node_modules/**",
+    "**/thirdparty/**",
+    "**/third_party/**",
+    "**/vendor/**",
+    "**/**-min-**",
+    "**/**-min.**",
+    "**/**.min.**",
+    "**/**jquery.?(ui|effects)-*.*.?(*).?(cs|j)s",
+    "**/**jquery-*.*.?(*).?(cs|j)s",
+    "**/prototype?(*).js",
+    "**/mootools*.*.*.js",
+    "**/dojo.js",
+    "**/MochiKit.js",
+    "**/yahoo-*.js",
+    "**/yui*.js",
+    "**/ckeditor*.js",
+    "**/tiny_mce*.js",
+    "**/tiny_mce/?(langs|plugins|themes|utils)/**",
+    "**/MathJax/**",
+    "**/shBrush*.js",
+    "**/shCore.js",
+    "**/shLegacy.js",
+    "**/modernizr.custom.?(*).js",
+    "**/knockout-*.*.*.debug.js",
+    "bower_components/**",
+    "public/javascripts/libs/*.js",
+    "typings/node/node.d.ts",
+    "gruntfile.js"
+  ],
+  "test": [
+    "**/test/**",
+    "**/tests/**",
+    "**/spec/**",
+    "**/specs/**"
+  ]
+}

@@ -1,0 +1,27 @@
+extends layout
+
+block head
+	link(rel='stylesheet', href='/stylesheets/gyroscope_controller.css')
+
+block content
+	.container.wheel
+		img#wheel(src='./images/wheel.png')
+	hr
+	.container
+		.content
+			div 
+				| Sent  gyroscope-coordinates: 
+			div
+				| x=
+				span#x
+			div
+				| y=
+				span#y
+			div
+				| z=
+				span#z
+
+block footer
+	script(src='./min_javascripts/libs/jQueryRotate.js')
+	script(src='./min_javascripts/libs/watch.js')
+	script(src='./min_javascripts/gyroscope_controller.js')

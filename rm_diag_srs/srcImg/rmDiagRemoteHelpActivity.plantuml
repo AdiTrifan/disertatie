@@ -1,0 +1,20 @@
+@startuml
+start
+
+if (the error can be resolved on the spot?) then (yes)
+  :the sysadmin try to resolve the problem immediately;
+  if (to resolve the problem needs the help of the user to resolve the problem) then (yes)
+  :remotely assist the user;
+    else (no)
+    :start to resolve the problem;
+    endif
+else (no)
+    if (can the sysadmin bring the car in a usable state?) then (yes)
+    :the car is usable until the next car dealership;
+  else (no)
+    :the sysadmin send the location of the car to a tow company;
+  endif
+endif
+
+stop
+@enduml

@@ -1,0 +1,16 @@
+{
+  "name": "Remote Diagnostics",
+  "icons": [
+    {
+      "src": "./images/web_launcher_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  //workstation ip
+ // "start_url": "10.8.52.158:3000",
+  //raspberry ip
+   "start_url": "192.168.1.111:3000",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

@@ -1,0 +1,70 @@
+extends layout
+
+
+block head
+	link(rel='stylesheet', href='/stylesheets/gyroscope_controller.css')
+
+block content
+	.container
+		#myModal.modal.fade(role='alert')
+				.modal-dialog
+				// Modal content
+				.modal-content
+					.modal-header
+						button.start(type='button', data-dismiss='alert', aria-label = 'Start') 
+							span(aria-hidden='true')
+						h4.modal-title Welcome to Remote Car Control Application!
+							p
+							p To start the engine, make sure you have the shifter in the PARK mode. Then, press the Engine START button. To turn the engine off, put it in PARK and press the ENGINE START/STOP  button. 
+							p
+								.row
+									.col-8.col-sm-5
+									button.btn.btn-default(type='button', data-dismiss='modal') Start/Stop
+
+		#notification.alert.alert-warning.alert-dismissible.fade.in(role='alert')
+			button.close(type='button', data-dismiss='alert.alert-warning', aria-label='Close')
+					span(aria-hidden='true') &times;
+			h4(id='You have some warnings!Please verify:')
+				| You have some warnings! Please verify:
+				a.anchorjs-link(href='#you-have-some-warnings')
+					span.anchorjs-icon
+			p
+		.row
+			.col-xs-12
+				h2 Main display
+				h4 
+				h4 Baterry
+				.progress
+					#baterry.progress-bar.progress-bar-danger.progress-bar-striped.active(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0.5%')
+				h4 Oil level
+				.progress
+					#oil.progress-bar.progress-bar-danger.progress-bar-striped.active(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0.5%')
+				h4 Windscreen fluids
+				.progress
+					#windshield.progress-bar.progress-bar-danger.progress-bar-striped.active(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0.5%')
+				h4 Tires pressure
+				.progress
+					#pressure.progress-bar.progress-bar-danger.progress-bar-striped.active(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0.5%')
+		
+		.row
+			.col-xs-12
+				h2 Temperatures
+					.row.temperatures
+						.col-xs-6
+							.circle#engine
+								strong
+							span Engine 
+						.col-xs-6
+							.circle#outside
+								strong
+							span Outside 
+							
+							
+	
+
+block footer
+	script(src='./min_javascripts/libs/circle-progress.js')
+	script(src='./min_javascripts/index.js')
+	script(src='./min_javascripts/libs/jQueryRotate.js')
+	script(src='./min_javascripts/libs/watch.js')
+	

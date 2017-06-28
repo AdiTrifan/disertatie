@@ -1,0 +1,12 @@
+extends layout
+block head
+	link(rel='stylesheet', href='/stylesheets/chartist.min.css')
+	link(rel='stylesheet', href='/stylesheets/style.css')
+block content
+	.container
+		h1 Graphs
+	.container
+		.ct-chart.ct-perfect-fourth
+block footer
+	script(src='./min_javascripts/libs/chartist.min.js')
+	script(src='./min_javascripts/graphs.js')
